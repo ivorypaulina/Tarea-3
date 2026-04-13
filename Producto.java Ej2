@@ -1,0 +1,36 @@
+public class Producto {
+    //Atributos
+    String nombre;
+    double precio;
+    int cantidad;
+
+    //Constructores
+
+          //Constructor vacio
+    public Producto(){
+        nombre="Sin nombre";
+        precio=0.0;
+        cantidad=0;
+    }
+
+         //Constructor con valores fijos
+    public Producto(boolean valoresFijos){
+        nombre="Computadora";
+        precio=1599.99;
+        cantidad=2;
+    }
+
+         //Constructor con parametros
+    public Producto(String nombre, double precio, int cantidad){
+        this.nombre=nombre;
+        this.precio=precio;
+        this.cantidad=cantidad;
+    }
+
+    public void mostrarInformacion(){
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Precio: $"+precio);
+        System.out.println("Cantidad: "+cantidad);
+        System.out.println("--------------------------");
+    }
+}
