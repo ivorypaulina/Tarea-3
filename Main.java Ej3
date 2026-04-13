@@ -1,0 +1,10 @@
+public class Main{
+    public static void main (String[] args){
+        CuentaBancaria cuenta1 = new CuentaBancaria("Julio Hernandez", 300);
+        cuenta1.mostrarInformacion();
+        cuenta1.retirar(30);
+        cuenta1.mostrarInformacion();
+        cuenta1.depositar(50);
+        cuenta1.mostrarInformacion();
+    }
+}
